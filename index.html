@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ea1a289ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Vanshika</span><br>From India </h1>
+            </div>
+        </div>
+    </div>
+    <!--  ----------about----------   -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Vanshika Joshi, currently in my pre-final year of B.Tech in Computer Science and Business Systems. With a strong passion for technology and innovation, I'm eager to begin my journey in the tech industry. I enjoy taking on new challenges, learning quickly, and adapting to dynamic environments. Collaborating with others to build impactful solutions is something I genuinely value and look forward to as I grow professionally.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C/C++ , HTML, CSS, JavaScript, Java(core)</li>
+                            <li><span>Frameworks</span><br>React.js, CSS<br></li>
+                            <li><span>Tools</span><br>VS Code, Git, Github</li>
+                            <li><span>Databases</span><br>My SOL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- <li><span>2021-Current</span><br>UI/UX Design Training at ET institute</li>
+                            <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li> -->
+                            <li><span>2025</span><br>AWS Certified Internship</li>
+                            <li><span>2024</span><br>Internship at Unified Mentor.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech. - Computer Science and Business Systems from  Medicaps University</li>
+                            <li><span>2022</span><br>12th Standard (Higher / Senior Secondary)-CBSE.</li>
+                            <li><span>2020</span><br>10th Standard (Secondary)-CBSE.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting clean, modern, and responsive website designs that ensure a smooth user experience across all devices.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Designing intuitive and engaging user interfaces for mobile and web apps that prioritize usability and aesthetic appeal.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>Building complete web applications from front to back, integrating responsive frontend interfaces with powerful backend and database solutions.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------portfolio--------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpeg">
+                    <div class="layer">
+                        <h3>Inspire-Sphere</h3>
+                        <p>InspireSphere is a comprehensive blog website designed to motivate, educate, and connect
+                            individuals seeking inspiration and self-improvement. This project aims to create an engaging
+                            digital platform where users can access high-quality content tailored to spark creativity, enhance
+                            personal growth, and navigate life’s challenges with confidence.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2 (2).jpeg">
+                    <div class="layer">
+                        <h3>Qurious</h3>
+                        <p>The purpose of "Qurious" is to provide an interactive and engaging quiz gaming experience.
+                            It allows users to participate in trivia challenges, compete with friends, and enhance their
+                            knowledge across various domains.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-8.jpeg">
+                    <div class="layer">
+                        <h3>Food Delivery App</h3>
+                        <p>The purpose of a Food Delivery App is to provide a convenient platform for users to browse, 
+                            order, and receive food from local restaurants or cloud kitchens at their doorstep, saving time 
+                            and effort while offering a variety of cuisine options.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+     <!-- -------------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vanshikajoshi06@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7898762614</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/vanshikajoshi06"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/vanshiikaa_06/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vanshika-joshi-05690b284/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Vanshika. Byee!!<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwF8alVtoaMNVzmKPw842pCvx4GFel7od1b7KE9k-flkmBs6o0pZOHMAe4NH179slfOCw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
